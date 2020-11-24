@@ -19,7 +19,7 @@ par(mfrow = c(2,2))
 #Plot 1:
 plot(household_power_consumption_2007$Full_Date, household_power_consumption_2007$Global_active_power, 
      col = rgb(red = 0, green = 0, blue = 0, alpha = 0),
-     main = NULL, xlab = "", ylab = "Global Active Power (kilowatts)")
+     main = NULL, xlab = "", ylab = "Global Active Power")
 lines(household_power_consumption_2007$Full_Date, household_power_consumption_2007$Global_active_power)
 
 #Plot 2:
@@ -40,7 +40,7 @@ legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"
 #Plot 4:
 plot(household_power_consumption_2007$Full_Date, household_power_consumption_2007$Global_reactive_power,
      col = rgb(red = 0, green = 0, blue = 0, alpha = 0),
-     main = NULL, xlab = "datetime", ylab = "Voltage")
+     main = NULL, xlab = "datetime", ylab = "Global_reactive_power")
 lines(household_power_consumption_2007$Full_Date, household_power_consumption_2007$Global_reactive_power)
 
 dev.off()
